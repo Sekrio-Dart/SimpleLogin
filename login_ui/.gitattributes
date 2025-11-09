@@ -1,9 +1,9 @@
-# Treat all Dart files and pubspec.yaml as Dart
+# Treat Dart code as Dart
 *.dart linguist-language=Dart
 pubspec.yaml linguist-language=Dart
 lib/** linguist-language=Dart
 
-# Ignore build, Android/iOS, and IDE config folders
+# Ignore build and generated files
 build/** linguist-vendored
 .android/** linguist-vendored
 .ios/** linguist-vendored
@@ -12,7 +12,9 @@ build/** linguist-vendored
 .idea/** linguist-vendored
 .vscode/** linguist-vendored
 
-# Ignore any C/C++ looking files you don’t care about
-*.cpp linguist-vendored
+# Ignore any C/C++/CMake files
 *.c linguist-vendored
+*.cpp linguist-vendored
 *.h linguist-vendored
+CMakeLists.txt linguist-vendored
+*.cmake linguist-vendored
