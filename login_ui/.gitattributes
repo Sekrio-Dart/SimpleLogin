@@ -1,0 +1,10 @@
+# Set language for Dart/Flutter
+*.dart linguist-language=Dart
+pubspec.yaml linguist-language=Dart
+lib/** linguist-language=Dart
+
+# Ignore build and generated files
+build/** linguist-vendored
+.android/** linguist-vendored
+.ios/** linguist-vendored
+*.lock linguist-vendored
